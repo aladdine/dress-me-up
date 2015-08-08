@@ -20,7 +20,7 @@
             }
 
             .logo {
-              color: orange !important;
+              color: #B51A2D !important;
               font-style: italic;
             }
 
