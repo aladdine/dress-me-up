@@ -30,7 +30,7 @@
 					$('#display-matches_color').append('<div style="clear: both;"></div>');
 					$('#display-matches_color').append("<p>Select Color:</p>");
 					for (i=0; data.product[0].colorMap.length - 1; ++i ) {
-		                    $('#display-matches_color').append("<div class='sizes' id='color_" + data.product[0].colorMap[i].colornormal + "' style='float: left; width: 25; padding: 3px; height: 25; margin-right: 10px; border: 1px solid #000; background-color:" + data.product[0].colorMap[i].colornormal + ";'></div>");
+		                    $('#display-matches_color').append("<div class='sizes' id='color_" + data.product[0].colorMap[i].colornormal + "' style='float: left; width: 25px; padding: 3px; height: 25px; margin-right: 10px; border: 1px solid #000; background-color:" + data.product[0].colorMap[i].colornormal + ";'></div>");
 		                    if (i>4 && i%5==0) {
 		                    	$('#display-matches_color').append('<div style="clear: both;"></div>');
 		                    }
@@ -57,7 +57,7 @@
                     $('#display-matches_size').append('<div style="clear: both;"></div>');
                     $('#display-matches_size').append("<br><p>Select Size:</p>");
 					for (i=0; data.product[0].SizeMap.length - 1; ++i ) {
-		                    $('#display-matches_size').append("<div class='sizes' id='size_" + data.product[0].SizeMap[i].size_value + "' style='float: left; width: 25; padding: 3px; height: 25; margin-right: 10px; border: 1px solid #000; background-color: #ccc;'>" + data.product[0].SizeMap[i].size_value + "</div>");
+		                    $('#display-matches_size').append("<div class='sizes' id='size_" + data.product[0].SizeMap[i].size_value + "' style='float: left; font-size: 9px; width: 25px; padding: 3px; margin: 10px; height: 25px; border: 1px solid #000; background-color: #ccc;'>" + data.product[0].SizeMap[i].size_value + "</div>");
 		                    if (i>4 && i%5==0) {
 		                    	$('#display-matches_size').append('<div style="clear: both;"></div>');
 		                    }
