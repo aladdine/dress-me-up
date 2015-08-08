@@ -22,6 +22,21 @@
               color: orange !important;
               font-style: italic;
             }
+
+            #how-to {
+              
+            }
+
+            #scan-item {
+
+            }
+            #results {
+
+            }
+
+            #checkout {
+
+            }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -51,7 +66,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Macy's <span class="logo">Dress Me Up</span> helps you pair clothing items</h1>
+        <h1><span class="logo">Dress Me Up</span> helps you pair clothing items in Macys.com</h1>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Start Shopping &raquo;</a></p>
       </div>
     </div>
@@ -64,10 +79,10 @@
     <div id="scan-item">
     Enter product code or scan
     </div>
-    <div id="scan-item">
+    <div id="results">
     Wait for results to show up here
     </div>
-    <div id="scan-item">
+    <div id="checkout">
     Checkout
     </div>
 
