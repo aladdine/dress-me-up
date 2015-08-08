@@ -30,7 +30,7 @@
 					$('#display-matches_color').append('<div style="clear: both;"></div>');
 					$('#display-matches_color').append("<p>Select Color:</p>");
 					for (i=0; data.product[0].colorMap.length - 1; ++i ) {
-		                    $('#display-matches_color').append("<div class='sizes' id='color_" + data.product[0].colorMap[i].colornormal + "' style='float: left; width: 25px; padding: 3px; height: 25px; margin-right: 10px; border: 1px solid #000; background-color:" + data.product[0].colorMap[i].colornormal + ";'></div>");
+		                    $('#display-matches_color').append("<div class='sizes' id='color_" + data.product[0].colorMap[i].colornormal + "' style='float: left; width: 25px; padding: 3px; height: 25px; margin: 10px; border: 1px solid #000; background-color:" + data.product[0].colorMap[i].colornormal + ";'></div>");
 		                    if (i>4 && i%5==0) {
 		                    	$('#display-matches_color').append('<div style="clear: both;"></div>');
 		                    }
