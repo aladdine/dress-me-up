@@ -16,6 +16,7 @@
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
+                font: arial, sans-serif;
             }
 
             .logo {
@@ -28,13 +29,18 @@
             }
 
             #scan-item {
+              display: none;
+              background-color: #000;
+              color: #FFF;
 
             }
             #results {
+              display: none;
 
             }
 
             #checkout {
+              display: none;
 
             }
         </style>
@@ -42,6 +48,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -64,12 +72,9 @@
       </div>
     </nav>
         <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1><span class="logo">Dress Me Up</span> helps you pair clothing items in Macys.com</h1>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Start Shopping &raquo;</a></p>
-      </div>
-    </div>
+    <div id="header">
+    <?  include 'header.php'; ?> 
+    </div> 
      <div class="container">
       <!-- Example row of columns -->
 
@@ -77,7 +82,7 @@
     <? include 'how-to.php'; ?>
     </div>
     <div id="scan-item">
-    Enter product code or scan
+    <? include 'scan-item.php'; ?>
     </div>
     <div id="results">
     Wait for results to show up here
@@ -98,6 +103,17 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+          $('#start').click(function(){
+             $('#how-to, #header').slideUp();
+             $('body').css('background-color','#000');
+             $('#scan-item').fadeIn();
+          });
+         
+
+
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
