@@ -34,7 +34,7 @@
               color: #FFF;
 
             }
-            #results {
+            #display-matches {
               display: none;
 
             }
@@ -42,6 +42,10 @@
             #checkout {
               display: none;
 
+            }
+
+            .scanner {
+              margin-bottom: 40px;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -84,8 +88,8 @@
     <div id="scan-item">
     <? include 'scan-item.php'; ?>
     </div>
-    <div id="results">
-    Wait for results to show up here
+    <div id="display-matches">
+    <? include 'display-matches.php'; ?>
     </div>
     <div id="checkout">
     Checkout
