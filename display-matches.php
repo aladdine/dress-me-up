@@ -1,1 +1,1 @@
-<h3>Display Matches</h3>
+<p>Loading matches</p>

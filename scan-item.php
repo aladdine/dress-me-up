@@ -4,7 +4,7 @@
 </div>
 <h3 style="text-align: center;">Or type code here</h3>
 <div class="input-group">
-  <input type="text" class="form-control" placeholder="Or type code here" value="749372521125" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" placeholder="Or type code here" id="upc" value="749372521125" aria-describedby="basic-addon2">
   <span class="input-group-addon" id="scan">Go</span>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 
 
 	 $.ajax({
-			url:'http://origin-api.macys.com/v3/catalog/product?upc=50946872827',
+			url:'http://origin-api.macys.com/v3/catalog/product?upc='+ $('#upc').val(),
 headers: {
 
 'Accept':'application/json',
@@ -23,7 +23,13 @@ headers: {
 },
 
 			success:function(data) {
-				console.log(data.product[0].image[0].imageurl);
+			//	console.log(data.product[0].image[0].imageurl);
+			console.log(data);
+			$('#scan-item').slideUp();
+			$('body').css('background-color','#FFF');
+			$('#display-matches').show();
+			$('#display-matches').html("<img width='200px' src='"+data.product[0].image[0].imageurl+"'>");
+
 			}
 
 });
