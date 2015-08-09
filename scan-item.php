@@ -71,6 +71,8 @@
 
 			}); // ajax call ends here
 
+
+
 	}); // click event listener ends here
 
 
