@@ -4,7 +4,7 @@
 </div>
 <h4 style="text-align: center;">Or type code here</h4>
 <div class="input-group">
-  <input type="text" class="form-control" placeholder="Or type code here" id="upc" value="749372521125" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" placeholder="Or type code here" id="upc" value="636206853432" aria-describedby="basic-addon2">
   <span class="input-group-addon" id="scan">Go</span>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
