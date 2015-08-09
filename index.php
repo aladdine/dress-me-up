@@ -39,6 +39,11 @@
 
             }
 
+            #matching-items {
+              display: none;
+
+            }
+
             #checkout {
               display: none;
 
@@ -90,6 +95,9 @@
     </div>
     <div id="display-matches">
     <? include 'display-matches.php'; ?>
+    </div>
+     <div id="matching-items">
+    <? include 'matching-items.php'; ?>
     </div>
     <div id="checkout">
     Checkout
